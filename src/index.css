@@ -395,7 +395,7 @@ button, input, select, textarea {
   min-height: 85vh;
   display: flex;
   align-items: center;
-  background: url('/images/exterior_main.jpg') center/cover no-repeat;
+  background: url('./assets/images/exterior_main.jpg') center/cover no-repeat;
   padding: 90px 0 80px;
   color: #ffffff;
 }
@@ -1406,7 +1406,7 @@ button, input, select, textarea {
 .booking-section {
   position: relative;
   background: linear-gradient(135deg, rgba(6, 38, 28, 0.94) 0%, rgba(11, 61, 46, 0.92) 100%),
-              url('/images/exterior_side.png') center/cover no-repeat;
+              url('./assets/images/exterior_side.png') center/cover no-repeat;
   color: #ffffff;
 }
 
