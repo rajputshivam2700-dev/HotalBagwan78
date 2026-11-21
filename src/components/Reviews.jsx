@@ -1,12 +1,5 @@
 import React from 'react'
 
-const metrics = [
-  { label: 'Hygiene & Cleanliness', pct: 88, val: '4.4 / 5' },
-  { label: 'Food Taste & Quality', pct: 86, val: '4.3 / 5' },
-  { label: 'Highway Location & Parking', pct: 90, val: '4.5 / 5' },
-  { label: 'Staff Hospitality & Service', pct: 84, val: '4.2 / 5' },
-]
-
 const testimonials = [
   {
     initials: 'RS', name: 'Rajesh Sharma', tag: 'Family Holiday', tagIcon: 'fa-users',
@@ -37,7 +30,7 @@ export default function Reviews() {
           </p>
         </div>
 
-        <div className="reviews-summary-card">
+        <div className="reviews-summary-card reviews-single-stat">
           <div className="score-stat-side">
             <div className="big-rating-number">4.3</div>
             <div className="star-row">
@@ -45,15 +38,6 @@ export default function Reviews() {
               <i className="fa-solid fa-star-half-stroke"></i>
             </div>
             <span className="rating-sub-lbl">Based on 280+ Verified Reviews</span>
-          </div>
-          <div className="score-bars-side">
-            {metrics.map((m, i) => (
-              <div className="metric-bar-row" key={i}>
-                <span className="m-label">{m.label}</span>
-                <div className="m-bar"><div className="m-fill" style={{ width: `${m.pct}%` }}></div></div>
-                <span className="m-val">{m.val}</span>
-              </div>
-            ))}
           </div>
         </div>
 

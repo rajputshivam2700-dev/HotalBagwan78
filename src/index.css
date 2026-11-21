@@ -815,13 +815,22 @@ button, input, select, textarea {
   margin-top: auto;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
-.room-actions-bar .btn-book-trigger {
+.room-actions-bar .btn {
   flex-grow: 1;
-  padding: 9px 14px;
-  font-size: 0.85rem;
+  padding: 8px 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border-radius: var(--radius-pill);
+}
+
+.room-stars-num {
+  font-weight: 800;
+  font-size: 0.84rem;
+  color: var(--gold-dark);
+  margin-left: 6px;
 }
 
 .btn-wa-room {
@@ -850,29 +859,37 @@ button, input, select, textarea {
 
 .restaurant-feature-card {
   display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 30px;
   background: var(--green-mint);
   border: 1px solid var(--green-border);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   align-items: center;
 }
 
 .rf-media-box {
   position: relative;
-  height: 340px;
-  background: #06261c;
+  height: 320px;
+  background: radial-gradient(circle, #0b3d2e 0%, #06261c 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
   overflow: hidden;
 }
 
 .rf-media-box img {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
-  image-rendering: -webkit-optimize-contrast;
+  max-height: 290px;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  display: block;
 }
 
 .rf-badge {
@@ -1039,9 +1056,13 @@ button, input, select, textarea {
   background: #ffffff;
   border: 1px solid var(--card-border);
   border-radius: var(--radius-md);
-  padding: 30px 22px;
+  padding: 28px 20px;
   box-shadow: var(--shadow-subtle);
   transition: var(--transition);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fac-item-card:hover {
@@ -1061,7 +1082,7 @@ button, input, select, textarea {
   align-items: center;
   justify-content: center;
   font-size: 1.45rem;
-  margin-bottom: 16px;
+  margin: 0 auto 16px auto;
   transition: var(--transition);
 }
 
@@ -1115,6 +1136,7 @@ button, input, select, textarea {
 /* ================= 6. PHOTO GALLERY ================= */
 .gallery-section {
   background-color: #ffffff;
+  padding: 38px 0 16px;
 }
 
 .gallery-category-tabs {
@@ -1263,25 +1285,26 @@ button, input, select, textarea {
 /* ================= 7. GUEST REVIEWS ================= */
 .reviews-section {
   background-color: var(--ivory-bg);
+  padding: 16px 0 38px;
 }
 
 .reviews-summary-card {
   background: #ffffff;
   border: 1px solid var(--card-border);
   border-radius: var(--radius-lg);
-  padding: 35px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 40px;
+  padding: 24px 35px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   box-shadow: var(--shadow-subtle);
-  margin-bottom: 35px;
+  margin: 0 auto 30px auto;
+  max-width: 420px;
 }
 
 .score-stat-side {
   text-align: center;
-  border-right: 1px solid #edf4f0;
-  padding-right: 25px;
+  border-right: none;
+  padding-right: 0;
 }
 
 .big-rating-number {

@@ -13,7 +13,7 @@ export default function Hero() {
         <div className="hero-content-box">
           <div className="hero-royal-badge">
             <i className="fa-solid fa-crown text-gold"></i>
-            <span>होटल बागवान पैलेस • 5-Star Hospitality Experience</span>
+            <span>Hotel Baghban Palace • 5-Star Hospitality Experience</span>
           </div>
 
           <h1 className="hero-main-title">
@@ -34,7 +34,7 @@ export default function Hero() {
               <i className="fa-solid fa-utensils"></i> Explore Restaurant
             </a>
             <a href="#rooms" className="btn btn-outline-gold btn-lg">
-              <i className="fa-solid fa-bed"></i> View Rooms & Prices
+              <i className="fa-solid fa-bed"></i> View Luxury Rooms
             </a>
           </div>
 

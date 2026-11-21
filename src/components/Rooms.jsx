@@ -100,15 +100,11 @@ export default function Rooms() {
               <div className="room-media">
                 <img src={room.img} alt={room.name} />
                 <span className={`room-ribbon${room.ribbonClass ? ' ' + room.ribbonClass : ''}`}>{room.ribbon}</span>
-                <div className="room-price-bubble">
-                  <span className="rp-currency">₹</span>
-                  <span className="rp-amount">{room.price}</span>
-                  <span className="rp-period">/ night</span>
-                </div>
               </div>
               <div className="room-details">
                 <div className="room-stars">
-                  {[1,2,3,4,5].map(s => <i className="fa-solid fa-star" key={s}></i>)}
+                  {[1,2,3,4].map(s => <i className="fa-solid fa-star" key={s}></i>)}
+                  <span className="room-stars-num">4.3</span>
                 </div>
                 <h3 className="room-name">{room.name}</h3>
                 <p className="room-brief">{room.desc}</p>
