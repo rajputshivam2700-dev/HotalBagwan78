@@ -1,27 +1,27 @@
 import React from 'react'
 
 const metrics = [
-  { label: 'Hygiene & Cleanliness', pct: 98, val: '4.9 / 5' },
-  { label: 'Food Taste & Quality', pct: 97, val: '4.9 / 5' },
-  { label: 'Highway Location & Parking', pct: 96, val: '4.8 / 5' },
-  { label: 'Staff Hospitality & Service', pct: 98, val: '4.8 / 5' },
+  { label: 'Hygiene & Cleanliness', pct: 88, val: '4.4 / 5' },
+  { label: 'Food Taste & Quality', pct: 86, val: '4.3 / 5' },
+  { label: 'Highway Location & Parking', pct: 90, val: '4.5 / 5' },
+  { label: 'Staff Hospitality & Service', pct: 84, val: '4.2 / 5' },
 ]
 
 const testimonials = [
   {
     initials: 'RS', name: 'Rajesh Sharma', tag: 'Family Holiday', tagIcon: 'fa-users',
-    rating: '5.0', stayType: 'Super Deluxe Royale',
-    quote: '"Hotel Baghban Palace made our family trip truly comfortable! The pure veg food at the restaurant was incredibly fresh and delicious. Clean rooms and attentive staff."',
+    rating: '4.4', stayType: 'Super Deluxe Royale',
+    quote: '"Hotel Baghban Palace made our family trip truly comfortable! The pure veg food at the restaurant was fresh and delicious. Clean rooms and attentive staff."',
   },
   {
     initials: 'PK', name: 'Pooja & Karan', tag: 'Couple Weekend', tagIcon: 'fa-heart',
-    rating: '4.9', stayType: 'Garden View Suite',
+    rating: '4.3', stayType: 'Garden View Suite',
     quote: '"The green decor in the cafe and the balcony views from our room were wonderful. Very peaceful atmosphere and prompt room service. Highly recommended!"',
   },
   {
     initials: 'AK', name: 'Amit Kumar', tag: 'Business Highway Travel', tagIcon: 'fa-briefcase',
-    rating: '4.8', stayType: 'Deluxe Room',
-    quote: '"Spacious parking right in front of the highway, super-fast Wi-Fi, and courteous reception. The hotel is very well-maintained and hygienic."',
+    rating: '4.2', stayType: 'Deluxe Room',
+    quote: '"Spacious parking right in front of the highway, fast Wi-Fi, and courteous reception. The hotel is very well-maintained and hygienic."',
   },
 ]
 
@@ -39,11 +39,12 @@ export default function Reviews() {
 
         <div className="reviews-summary-card">
           <div className="score-stat-side">
-            <div className="big-rating-number">4.8</div>
+            <div className="big-rating-number">4.3</div>
             <div className="star-row">
-              {[1,2,3,4,5].map(s => <i className="fa-solid fa-star" key={s}></i>)}
+              {[1, 2, 3, 4].map(s => <i className="fa-solid fa-star" key={s}></i>)}
+              <i className="fa-solid fa-star-half-stroke"></i>
             </div>
-            <span className="rating-sub-lbl">Based on 1,420+ Verified Reviews</span>
+            <span className="rating-sub-lbl">Based on 280+ Verified Reviews</span>
           </div>
           <div className="score-bars-side">
             {metrics.map((m, i) => (

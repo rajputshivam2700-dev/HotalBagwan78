@@ -40,7 +40,7 @@ export default function Hero() {
 
           <div className="hero-stats-ribbon">
             {[
-              { icon: 'fa-star', title: '4.8 / 5 Rating', sub: '1,420+ Happy Guests' },
+              { icon: 'fa-star', title: '4.3 / 5 Rating', sub: '280+ Happy Guests' },
               { icon: 'fa-leaf', title: '100% Pure Veg', sub: 'Restaurant & Lawn Cafe' },
               { icon: 'fa-square-parking', title: 'Spacious Parking', sub: '24/7 CCTV & Security' },
               { icon: 'fa-champagne-glasses', title: 'Grand Banquet', sub: '500+ Guests Capacity' },

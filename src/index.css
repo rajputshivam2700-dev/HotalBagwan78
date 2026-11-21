@@ -30,9 +30,9 @@
   --text-body: #4b6156;
   --text-muted: #71887c;
 
-  /* Typography */
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-royal: 'Cinzel', serif;
+  /* Typography - Unified Clean Modern Sans Font */
+  --font-serif: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-royal: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
   /* Elevations & Shapes */
@@ -104,14 +104,14 @@ button, input, select, textarea {
 
 /* Common Section Styles */
 .section {
-  padding: 85px 0;
+  padding: 48px 0;
   position: relative;
 }
 
 .section-title-center {
   text-align: center;
   max-width: 720px;
-  margin: 0 auto 55px;
+  margin: 0 auto 32px;
 }
 
 .section-tag-pill {
@@ -862,13 +862,17 @@ button, input, select, textarea {
 
 .rf-media-box {
   position: relative;
-  height: 380px;
+  height: 340px;
+  background: #06261c;
+  overflow: hidden;
 }
 
 .rf-media-box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .rf-badge {
@@ -1143,13 +1147,13 @@ button, input, select, textarea {
 
 .gallery-mosaic-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
 }
 
 .g-card {
   position: relative;
-  height: 250px;
+  height: 280px;
   border-radius: var(--radius-md);
   overflow: hidden;
   cursor: pointer;
