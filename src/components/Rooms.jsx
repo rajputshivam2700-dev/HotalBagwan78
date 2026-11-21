@@ -102,17 +102,7 @@ export default function Rooms() {
                 <span className={`room-ribbon${room.ribbonClass ? ' ' + room.ribbonClass : ''}`}>{room.ribbon}</span>
               </div>
               <div className="room-details">
-                <div className="room-stars">
-                  {[1,2,3,4].map(s => <i className="fa-solid fa-star" key={s}></i>)}
-                  <span className="room-stars-num">4.3</span>
-                </div>
                 <h3 className="room-name">{room.name}</h3>
-                <p className="room-brief">{room.desc}</p>
-                <ul className="room-spec-list">
-                  {room.specs.map((spec, j) => (
-                    <li key={j}><i className={`fa-solid ${spec.icon}`}></i> {spec.text}</li>
-                  ))}
-                </ul>
                 <div className="room-actions-bar">
                   <button className="btn btn-gold" onClick={() => handleBookNow(room.roomKey, room.rate)}>
                     <i className="fa-solid fa-bookmark"></i> Book Now

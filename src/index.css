@@ -764,23 +764,21 @@ button, input, select, textarea {
 }
 
 .room-details {
-  padding: 22px 20px;
+  padding: 18px 18px 16px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-.room-stars {
-  color: var(--gold-primary);
-  font-size: 0.82rem;
-  margin-bottom: 6px;
-}
-
 .room-name {
   font-family: var(--font-serif);
-  font-size: 1.3rem;
+  font-size: 1.25rem;
+  font-weight: 800;
   color: var(--green-primary);
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
 }
 
 .room-brief {
